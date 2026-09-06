@@ -1,2 +1,2 @@
 # learning-c
-My daily C programming learning journey
+My daily C programming learning journey.
