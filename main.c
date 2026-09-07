@@ -1,16 +1,17 @@
 #include <stdio.h>
 
+int add(int a, int b);
+
 int main(void)
 {
-    int i = 0;
-    
-    // 循环
-    do
-    {
-	printf("%d\n", i);
-	i++;
-    }
-    while (i < 10);
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d + %d = %d\n", a, b, add(a, b));
 
     return 0;
+}
+
+int add(int a, int b)
+{
+    return a + b;
 }
