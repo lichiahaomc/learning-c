@@ -4,7 +4,7 @@ My daily C programming learning journey.
 - [x] basic structure
 - [x] printf();
 - [x] variables
-- [] types
+- [ ] types
 - [x] arrays
-- [] multidimensional arrays
-- [] more...
+- [ ] multidimensional arrays
+- [ ] more...
