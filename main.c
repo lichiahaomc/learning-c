@@ -2,23 +2,28 @@
 
 int main(void)
 {
-    int numbers[10], number;
+    const int PASS_GRADE = 60;
+    const int MAX_GRADE = 100;
+    const int MIN_GRADE = 0;
+    int input_grade;
+    
+    printf("Please enter your grade.\n");
+    scanf("%d", &input_grade);
 
-    numbers[0] = 1;
-    numbers[1] = 2;
-    numbers[2] = 3;
-    numbers[3] = 4;
-    numbers[4] = 5;
-    numbers[5] = 6;
-    numbers[6] = 7;
-    numbers[7] = 8;
-    numbers[8] = 9;
-    numbers[9] = 10;
-    numbers[10] = 11;
+    if (input_grade >= PASS_GRADE && input_grade <= MAX_GRADE)
+    {
+	printf("You pass the exam.\n");
+    }
+    else if (input_grade < PASS_GRADE && input_grade >= MIN_GRADE)
+    {
+	printf("You lose the exam.\n");
+    }
+    else
+    {
+	printf("Please enter the correct grade.\n");
+    }
 
-    number = 5;
-
-    printf("The %dth number in number[] is %d.\n", number + 1, numbers[number]);
+    printf("Good-bye.\n");
 
     return 0;
 }

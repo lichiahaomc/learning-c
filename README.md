@@ -7,4 +7,5 @@ My daily C programming learning journey.
 - [ ] types
 - [x] arrays
 - [ ] multidimensional arrays
+- [ ] if-else
 - [ ] more...
