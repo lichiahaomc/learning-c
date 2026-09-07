@@ -2,28 +2,25 @@
 
 int main(void)
 {
-    const int PASS_GRADE = 60;
-    const int MAX_GRADE = 100;
-    const int MIN_GRADE = 0;
-    int input_grade;
-    
-    printf("Please enter your grade.\n");
-    scanf("%d", &input_grade);
+    // find the max one
+    int a, b, c;
+    int max;
 
-    if (input_grade >= PASS_GRADE && input_grade <= MAX_GRADE)
-    {
-	printf("You pass the exam.\n");
-    }
-    else if (input_grade < PASS_GRADE && input_grade >= MIN_GRADE)
-    {
-	printf("You lose the exam.\n");
-    }
-    else
-    {
-	printf("Please enter the correct grade.\n");
-    }
+    scanf("%d %d %d", &a, &b, &c);
 
-    printf("Good-bye.\n");
+    if (a < b)
+    {
+	if (b < c) max = c;
+	else max = b;
+    }
+    else if (a > b)
+    {
+	if (a < c) max = c;
+	else max = a;
+    }
+    else printf("ERROR: Cannot find the max one.\n");
+
+    printf("The max one is %d.\n", max);
 
     return 0;
 }
