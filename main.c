@@ -2,8 +2,11 @@
 
 int main(void)
 {
-    printf("Name\t\tID\n");
-    printf("LI Jiahao\t2026150083\n");
+    int x;
+    
+    // if (scanf("%d", &x) != 1) return 0;
+
+    printf("%d\n", scanf("%d", &x));
 
     return 0;
 }
