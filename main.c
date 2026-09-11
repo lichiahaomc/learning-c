@@ -2,11 +2,11 @@
 
 int main(void)
 {
-    int x;
-    
-    // if (scanf("%d", &x) != 1) return 0;
+    int a = 10;
+    int *p = &a;
+    *p = 7;
 
-    printf("%d\n", scanf("%d", &x));
+    printf("%d\n", *p);
 
     return 0;
 }
